@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import os
 import time
 import random
@@ -16,10 +17,9 @@ from loghelper import log
 
 
 def main():
-    # 拒绝在GitHub Action运行
+    # 在GitHub Action运行
     if os.getenv('GITHUB_ACTIONS') == 'true':
-        print("请不要在GitHub Action运行本项目")
-        exit(0)
+        print("在GitHub Action运行项目")
     # 初始化，加载配置
     return_data = "\n"
     config.load_config()
