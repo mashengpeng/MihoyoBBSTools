@@ -162,7 +162,7 @@ def load_config(p_path=None):
             data = config_v10_update(data)
         save_config(p_config=data)
     # 去除cookie最末尾的空格
-    data["account"]["cookie"] = str(data["account"]["cookie"]).rstrip(' ')
+    data["account"]["cookie"] = str(os.environ["GENSHIN_COOKIE"]).rstrip(' ')
     config = data
     log.info("Config加载完毕")
     return data
