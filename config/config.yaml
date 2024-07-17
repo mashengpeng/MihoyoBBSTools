@@ -15,7 +15,7 @@ device:
   id: ""
 mihoyobbs:
   #控制bbs功能是否启用
-  enable: true
+  enable: false
   #社区签到
   checkin: true
   #签到的社区列表 详情可以看config文件夹下面的readme
@@ -60,7 +60,7 @@ games:
       black_list: []
     # 崩坏: 星穹铁道
     honkai_sr:
-      checkin: false
+      checkin: true
       black_list: []
     #绝区零
     zzz:
